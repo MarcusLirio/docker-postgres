@@ -1,0 +1,4 @@
+FROM postgres:15
+
+# Copia o script de inicialização para a imagem
+COPY ./init.sql /docker-entrypoint-initdb.d/

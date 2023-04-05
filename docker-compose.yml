@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15
+    container_name: postgresql
+    environment:
+      POSTGRES_USER: omegacosysadmin
+      POSTGRES_PASSWORD: omegaCoTechSysAdmin#2023
+      POSTGRES_DB: orbis_dev
+    volumes:
+      - ./data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
