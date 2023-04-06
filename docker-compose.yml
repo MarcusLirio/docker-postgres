@@ -4,9 +4,9 @@ services:
     image: postgres:15
     container_name: postgresql
     environment:
-      POSTGRES_USER: omegacosysadmin
-      POSTGRES_PASSWORD: omegaCoTechSysAdmin#2023
-      POSTGRES_DB: orbis_dev
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
+      POSTGRES_DB: 
     volumes:
       - ./data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
